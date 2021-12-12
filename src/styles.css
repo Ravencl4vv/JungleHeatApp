@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.05);
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo span
+{
+    color: #16b11e;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header.sticky .navigation li align-self:hover
+{
+    color: #16b11e;
+}
